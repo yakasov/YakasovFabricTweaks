@@ -6,7 +6,6 @@ Several tweaks from the r/minecraftsuggestions subreddit.
 
 - Removes the annoying 'bed not within range' message by letting you sleep at any interactable range
 - Feather Falling prevents crops from being trampled (src TheAverageRedditor23)
-- Yellow leather fools Piglins up to 6 blocks (src MaeBeaInTheWoods)
 - New death message when the Ender Dragon kills you (src AgathorKahn)
 - New death message when a Phantom kills you (src SoupMayoMaker)
 - New death message for when a Warden kills you

@@ -5,7 +5,7 @@
 	"mixins": [
 		"FeatherTrampling",
 		"IsBedWithinRange",
-		"YellowLeatherFoolsPiglins"
+		"AddDragonDeathMessage"
 	],
 	"injectors": {
 		"defaultRequire": 1
