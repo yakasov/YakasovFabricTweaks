@@ -1,13 +1,14 @@
 {
-	"required": true,
-	"package": "com.yakasov.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"FeatherTrampling",
-		"IsBedWithinRange",
-		"AddDragonDeathMessage"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "com.yakasov.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "FeatherTrampling",
+    "IsBedWithinRange",
+    "SaplingsOnSand",
+    "SaplingsOnSandDecay"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }
