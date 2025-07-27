@@ -10,8 +10,8 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(PlantBlock.class)
-public abstract class SaplingsOnSand extends Block {
-    public SaplingsOnSand(Settings settings) {
+public abstract class PlantBlockMixin extends Block {
+    public PlantBlockMixin(Settings settings) {
         super(settings);
     }
 
