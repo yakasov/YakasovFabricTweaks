@@ -4,6 +4,7 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "AbstractFurnaceBlockEntityMixin",
+    "BeaconBlockEntityMixin",
     "ComposterBlockMixin",
     "DamageSourceMixin",
     "EnchantmentMixin",

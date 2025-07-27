@@ -13,14 +13,32 @@ Several tweaks from the r/minecraftsuggestions subreddit.
 - Zombies attack Illagers (src Nightfall-memer)
 - If an animal dies to due the Wither effect, it drops Rotten Flesh (src 8bit95)
 - Magma Blocks can be used as fuel (src SpookySquid19)e
-- ! Minecarts move faster on gravel (src razor1523)
 - Piglins attack players wearing Wither Skulls (src Player48274)
-- ! Shift + right-clicking a Saddle wearing Pig or Strider removes the Saddle
 - /enchant no longer has restrictions (src KamikazeSenpai21)
-- Withers drop 250XP as opposed to 50XP 
-- ! Right-clicking whilst holding any armour piece will swap out your currently worn armour (if applicable)
+- Withers drop 250XP as opposed to 50XP
 - Rotten Flesh can be used in composters
-- ! Multiple Dragon Eggs can be obtained, provided there is not one already on the portal
+- Beacons have increased range and increased effect time (still scaling per level)
+
+### Upcoming
+
+- Minecarts move faster on gravel (src razor1523)
+- Shift + right-clicking a Saddle wearing Pig or Strider removes the Saddle
+- Right-clicking whilst holding any armour piece will swap out your currently worn armour (if applicable)
+- Multiple Dragon Eggs can be obtained, provided there is not one already on the portal
+- Silk Touch on a Mob Spawner will drop an empty Mob Spawner Cage (src Flynt_Foxx)
+- Creepers run away from Jukeboxes playing 'Cat' (src PotatoSacGamingYT)
+- Chainmail Armour is invisible when using invisibility potions (src willyj_)
+- Crouching whilst placing any plant with a random offset will center the plant in the middle of the block (src Fireheart318s_Reddit)
+- Invisible Item Frames are craftable in Survival Mode
+- Zombies can randomly spawn with Pickaxes below certain depths
+- Phantoms no longer spawn when the player is in a Mushroom biome
+- Beacons have Night Vision as an optional effect
+- End Ships use Glow Item Frames for Elytra (src CausalLoop25)
+- Totems of Undying provide effects to match the way you escaped death (src mcupdatewanter)
+- Woodland Mansion loot pools are better
+- Fire Aspect tools can be used in place of Flint and Steel for the purpose of lighting things
+- Eating a Golden Carrot removes Blindness (src MaximusMatrix)
+- Sunken Shipwrecks can have Spyglasses (src Funny_Musician2591)
 
 ## License
 
