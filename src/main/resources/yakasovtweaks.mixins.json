@@ -9,11 +9,13 @@
     "DamageSourceMixin",
     "EnchantmentMixin",
     "FarmlandBlockMixin",
+    "ItemsMixin",
     "LivingEntityMixin",
     "PiglinBrainMixin",
     "PlantBlockMixin",
     "SaplingBlockMixin",
     "ServerPlayerEntityMixin",
+    "SpawnerBlockMixin",
     "WitherEntityMixin",
     "ZombieEntityMixin",
     "ZombifiedPiglinEntityMixin"

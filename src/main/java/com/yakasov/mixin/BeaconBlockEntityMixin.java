@@ -16,8 +16,8 @@ public class BeaconBlockEntityMixin {
     )
     private static double increaseBeaconRange(double originalRange, World world, BlockPos pos, int beaconLevel) {
         // Before: 20, 30, 40, 50
-        // After: 32, 64, 96, 128
-        return beaconLevel * 32;
+        // After: 24, 48, 72, 96
+        return beaconLevel * 24;
     }
 
     @ModifyVariable(

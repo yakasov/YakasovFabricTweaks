@@ -18,6 +18,9 @@ Several tweaks from the r/minecraftsuggestions subreddit.
 - Withers drop 250XP as opposed to 50XP
 - Rotten Flesh can be used in composters
 - Beacons have increased range and increased effect time (still scaling per level)
+- Obsidian is fireproof (src RHVGamer)
+- Nether Stars are fireproof (src ShinyStache)
+- Mob Spawners have higher blast resistance (src Spiderstaats)
 
 ### Upcoming
 
@@ -39,6 +42,16 @@ Several tweaks from the r/minecraftsuggestions subreddit.
 - Fire Aspect tools can be used in place of Flint and Steel for the purpose of lighting things
 - Eating a Golden Carrot removes Blindness (src MaximusMatrix)
 - Sunken Shipwrecks can have Spyglasses (src Funny_Musician2591)
+- Elytra can be duplicated via crafting provided you already have at least one (src Mrcoolcatgaming)
+- Wardens are no longer fooled by invisibility (src \_Yemm\_)
+- End Crystal recipe requires an Amethyst Shard (src Nightfall-memer)
+- Axolotls do not suffocate out of water if they are on a Moss-related block (src WillowWispFlame)
+- Piglin Brutes killed by Ghast fireballs drop the Pigstep music disc (src Yan_Nobrega24)
+- Bonemealing stripped wood will unstrip it
+- Mob Spawners can be pushed by pistons
+- Glass can be converted back into Sand using a Stonecutter (src keeper420)
+- Pigs have a chance to have larger litters (src Dodoraptor)
+- Jungle Temples spawn with poison tipped arrows rather than normal arrows (src bibizu)
 
 ## License
 
