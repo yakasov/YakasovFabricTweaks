@@ -19,8 +19,9 @@ Several tweaks from the r/minecraftsuggestions subreddit.
 - Rotten Flesh can be used in composters
 - Beacons have increased range and increased effect time (still scaling per level)
 - Obsidian is fireproof (src RHVGamer)
-- Nether Stars are fireproof (src ShinyStache)
 - Mob Spawners have higher blast resistance (src Spiderstaats)
+- All mobs have a 5% chance to spawn an additional baby
+- Pigs have a chance to have larger litters (src Dodoraptor)
 
 ### Upcoming
 
@@ -50,7 +51,6 @@ Several tweaks from the r/minecraftsuggestions subreddit.
 - Bonemealing stripped wood will unstrip it
 - Mob Spawners can be pushed by pistons
 - Glass can be converted back into Sand using a Stonecutter (src keeper420)
-- Pigs have a chance to have larger litters (src Dodoraptor)
 - Jungle Temples spawn with poison tipped arrows rather than normal arrows (src bibizu)
 
 ## License

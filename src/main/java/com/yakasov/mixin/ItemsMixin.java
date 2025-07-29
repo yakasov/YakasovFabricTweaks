@@ -2,7 +2,6 @@ package com.yakasov.mixin;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -24,13 +23,4 @@ public class ItemsMixin {
             cir.setReturnValue(register(new BlockItem(Blocks.OBSIDIAN, new Item.Settings().fireproof())));
         }
     }
-
-    // TODO: FIX!!! THIS CRASHES THE CLIENT
-//    @Inject(method = "register(Ljava/lang/String;Lnet/minecraft/item/Item;)Lnet/minecraft/item/Item;", at = @At("HEAD"), cancellable = true)
-//    private static void makeNetherStarsFireproof(String id, Item item, CallbackInfoReturnable<Item> cir)
-//    {
-//        if (Objects.equals(id, "nether_star")) {
-//            cir.setReturnValue(register(id, new Item(new Item.Settings().fireproof().rarity(Rarity.UNCOMMON).component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true))));
-//        }
-//    }
 }
