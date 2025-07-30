@@ -11,7 +11,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(AnimalEntity.class)
 public class AnimalEntityMixin {
-    @Inject(method = "breed(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/passive/AnimalEntity;)V", at = @At("TAIL"))
+    @Inject(
+            method = "breed(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/passive/AnimalEntity;)V",
+            at = @At("TAIL"))
     private void spawnMultipleBabies(ServerWorld world, AnimalEntity other, CallbackInfo ci) {
         AnimalEntity self = (AnimalEntity)(Object)this;
 

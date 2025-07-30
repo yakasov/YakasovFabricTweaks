@@ -9,7 +9,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(ComposterBlock.class)
 public class ComposterBlockMixin {
-    @Inject(method = "registerDefaultCompostableItems", at = @At("TAIL"))
+    @Inject(
+            method = "registerDefaultCompostableItems",
+            at = @At("TAIL")
+    )
     private static void addCustomCompostableItems(CallbackInfo ci) {
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(Items.ROTTEN_FLESH, 0.65F);
     }

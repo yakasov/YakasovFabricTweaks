@@ -26,7 +26,10 @@ public class PiglinBrainMixin {
         throw new AssertionError();
     }
 
-    @Inject(method = "tickActivities", at = @At("HEAD"))
+    @Inject(
+            method = "tickActivities",
+            at = @At("HEAD")
+    )
     private static void angerAtWitherSkullWearers(PiglinEntity piglin, CallbackInfo ci) {
         if (piglin.getTarget() == null) {
             List<PlayerEntity> nearbyPlayers = piglin.getWorld().getEntitiesByClass(

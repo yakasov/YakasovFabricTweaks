@@ -15,8 +15,14 @@ public abstract class PlantBlockMixin extends Block {
         super(settings);
     }
 
-    @Inject(method = "canPlantOnTop", at = @At("HEAD"), cancellable = true)
-    protected void canPlantOnTop(BlockState floor, BlockView world, BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
+    @Inject(
+            method = "canPlantOnTop",
+            at = @At("HEAD"),
+            cancellable = true
+    )
+    protected void canPlantOnTop(
+            BlockState floor, BlockView world, BlockPos pos, CallbackInfoReturnable<Boolean> cir
+    ) {
         PlantBlock thisObj = (PlantBlock) (Object) this;
         if (thisObj.getClass() == SaplingBlock.class) {
             cir.setReturnValue(floor.isIn(BlockTags.SAND) || floor.isIn(BlockTags.DIRT) || floor.isOf(Blocks.FARMLAND));

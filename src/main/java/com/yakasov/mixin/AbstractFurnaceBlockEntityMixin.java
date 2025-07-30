@@ -13,7 +13,10 @@ import java.util.Map;
 @Mixin(AbstractFurnaceBlockEntity.class)
 public class AbstractFurnaceBlockEntityMixin {
 
-    @Inject(method = "createFuelTimeMap", at = @At("RETURN"))
+    @Inject(
+            method = "createFuelTimeMap",
+            at = @At("RETURN")
+    )
     private static void addMagmaBlockFuel(CallbackInfoReturnable<Map<Item, Integer>> cir) {
         Map<Item, Integer> fuelMap = cir.getReturnValue();
         fuelMap.put(Items.MAGMA_BLOCK, Integer.valueOf(400));

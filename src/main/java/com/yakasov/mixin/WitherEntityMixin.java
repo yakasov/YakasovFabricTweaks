@@ -15,7 +15,10 @@ public class WitherEntityMixin extends HostileEntity {
         super(entityType, world);
     }
 
-    @Inject(method = "<init>(Lnet/minecraft/entity/EntityType;Lnet/minecraft/world/World;)V", at = @At("TAIL"))
+    @Inject(
+            method = "<init>(Lnet/minecraft/entity/EntityType;Lnet/minecraft/world/World;)V",
+            at = @At("TAIL")
+    )
     public void increaseWitherExperiencePoints(EntityType<? extends WitherEntity> entityType, World world, CallbackInfo ci) {
         this.experiencePoints = 250;
     }

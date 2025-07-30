@@ -22,20 +22,20 @@ Several tweaks from the r/minecraftsuggestions subreddit.
 - Mob Spawners have higher blast resistance (src Spiderstaats)
 - All mobs have a 5% chance to spawn an additional baby
 - Pigs have a chance to have larger litters (src Dodoraptor)
+- Phantoms no longer spawn when the player is in a Mushroom biome
+- Zombies can randomly spawn with Pickaxes below certain depths
+- Bonemealing stripped wood will unstrip it
 
 ### Upcoming
 
 - Minecarts move faster on gravel (src razor1523)
 - Shift + right-clicking a Saddle wearing Pig or Strider removes the Saddle
-- Right-clicking whilst holding any armour piece will swap out your currently worn armour (if applicable)
 - Multiple Dragon Eggs can be obtained, provided there is not one already on the portal
 - Silk Touch on a Mob Spawner will drop an empty Mob Spawner Cage (src Flynt_Foxx)
 - Creepers run away from Jukeboxes playing 'Cat' (src PotatoSacGamingYT)
 - Chainmail Armour is invisible when using invisibility potions (src willyj_)
 - Crouching whilst placing any plant with a random offset will center the plant in the middle of the block (src Fireheart318s_Reddit)
 - Invisible Item Frames are craftable in Survival Mode
-- Zombies can randomly spawn with Pickaxes below certain depths
-- Phantoms no longer spawn when the player is in a Mushroom biome
 - Beacons have Night Vision as an optional effect
 - End Ships use Glow Item Frames for Elytra (src CausalLoop25)
 - Totems of Undying provide effects to match the way you escaped death (src mcupdatewanter)
@@ -44,11 +44,9 @@ Several tweaks from the r/minecraftsuggestions subreddit.
 - Eating a Golden Carrot removes Blindness (src MaximusMatrix)
 - Sunken Shipwrecks can have Spyglasses (src Funny_Musician2591)
 - Elytra can be duplicated via crafting provided you already have at least one (src Mrcoolcatgaming)
-- Wardens are no longer fooled by invisibility (src \_Yemm\_)
 - End Crystal recipe requires an Amethyst Shard (src Nightfall-memer)
 - Axolotls do not suffocate out of water if they are on a Moss-related block (src WillowWispFlame)
 - Piglin Brutes killed by Ghast fireballs drop the Pigstep music disc (src Yan_Nobrega24)
-- Bonemealing stripped wood will unstrip it
 - Mob Spawners can be pushed by pistons
 - Glass can be converted back into Sand using a Stonecutter (src keeper420)
 - Jungle Temples spawn with poison tipped arrows rather than normal arrows (src bibizu)

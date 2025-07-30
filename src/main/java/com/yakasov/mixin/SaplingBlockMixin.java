@@ -17,7 +17,11 @@ import static net.minecraft.block.Block.pushEntitiesUpBeforeBlockChange;
 
 @Mixin(SaplingBlock.class)
 public class SaplingBlockMixin {
-    @Inject(method = "generate", at = @At("HEAD"), cancellable = true)
+    @Inject(
+            method = "generate",
+            at = @At("HEAD"),
+            cancellable = true
+    )
     public void generate(ServerWorld world, BlockPos pos, BlockState state, Random random, CallbackInfo ci) {
         if (world.getBlockState(pos.down()).isIn(BlockTags.SAND)) {
             BlockState blockState = pushEntitiesUpBeforeBlockChange(state, Blocks.DEAD_BUSH.getDefaultState(), world, pos);

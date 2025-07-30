@@ -16,7 +16,10 @@ import java.util.List;
 
 @Mixin(ZombifiedPiglinEntity.class)
 public class ZombifiedPiglinEntityMixin {
-    @Inject(method = "mobTick", at = @At("HEAD"))
+    @Inject(
+            method = "mobTick",
+            at = @At("HEAD")
+    )
     private void checkAngerOnWitherSkullWornByNearbyPlayers(CallbackInfo ci) {
         ZombifiedPiglinEntity self = (ZombifiedPiglinEntity)(Object)this;
         ServerWorld world = (ServerWorld)self.getWorld();

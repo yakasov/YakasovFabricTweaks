@@ -5,10 +5,14 @@ import net.minecraft.entity.ai.goal.ActiveTargetGoal;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.IllagerEntity;
 import net.minecraft.entity.mob.ZombieEntity;
+import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(ZombieEntity.class)
@@ -17,8 +21,29 @@ public class ZombieEntityMixin extends HostileEntity {
         super(entityType, world);
     }
 
-    @Inject(method = "initCustomGoals", at = @At("TAIL"))
+    @Inject(
+            method = "initCustomGoals",
+            at = @At("TAIL")
+    )
     private void addIllagerAttackGoal(CallbackInfo ci) {
         this.targetSelector.add(4, new ActiveTargetGoal<>((ZombieEntity)(Object)this, IllagerEntity.class, true));
+    }
+
+    @Redirect(
+            method = "initEquipment",
+            at = @At(
+                    value = "NEW",
+                    target = "(Lnet/minecraft/item/ItemConvertible;)Lnet/minecraft/item/ItemStack;",
+                    ordinal = 1
+            )
+    )
+    private ItemStack makeShovelPickaxeUnderground(ItemConvertible item) {
+        ZombieEntity self = (ZombieEntity)(Object) this;
+
+        if (item == Items.IRON_SHOVEL && self.getBlockY() < 32) {
+            return new ItemStack(Items.IRON_PICKAXE);
+        }
+
+        return new ItemStack(item);
     }
 }

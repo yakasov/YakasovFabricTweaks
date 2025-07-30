@@ -24,8 +24,14 @@ public abstract class LivingEntityMixin extends Entity {
         super(type, world);
     }
 
-    @Inject(method = "drop", at = @At("HEAD"), cancellable = true)
-    private void dropRottenFleshIfKilledByWithEffect(ServerWorld world, DamageSource damageSource, CallbackInfo ci) {
+    @Inject(
+            method = "drop",
+            at = @At("HEAD"),
+            cancellable = true
+    )
+    private void dropRottenFleshIfKilledByWithEffect(
+            ServerWorld world, DamageSource damageSource, CallbackInfo ci
+    ) {
         if (damageSource.isOf(DamageTypes.WITHER) && world.getGameRules().getBoolean(GameRules.DO_MOB_LOOT)) {
             final int amount = Random.create().nextInt(2);
             final ItemStack flesh = new ItemStack(ROTTEN_FLESH, amount);
